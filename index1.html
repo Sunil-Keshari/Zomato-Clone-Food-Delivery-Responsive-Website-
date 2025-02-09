@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato a Food Delivery Website</title>
+    
+  <link rel="icon" type="image/x-icon" href="Foodimages/Zomato.png">
+ <link rel="stylesheet" href="zomato.css">   
+    <script src="zomato.js" defer></script>
+
+</head>
+<body>
+  <div class="pp">
+    <header class="header">
+        <div class="logo">
+            <h1>Zomato</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for restaurants, cuisines..." />
+            <button onclick="searchRestaurants()">Search</button>
+    
+
+  
+    
+        </div>
+<!-- speaker Option -->
+ <span class="ww">
+  <textarea id="search" placeholder="Enter text to speak..."></textarea>
+  <button class="search-bar" onclick="speakText()">🔊 Speak</button></span>
+
+         <nav class="nav-links">
+          <a href="login.html">Log in</a>
+          <a href="Cart.html">Customize Meal </a>
+        <a href=""> Add Restaurant </a>
+          <a href="about.html">About us </a>
+      </nav>
+    </header>
+  </header>
+  </div>
+
+
+    <div>
+    <img src ="Foodimages/Main.jpg" style="width: 100%;height:10%;">
+      <Marquee class="san"> 
+        प्रभो शक्तिमन् हिन्दुराष्ट्राङ्गभूता इमे सादरं त्वां नमामो वयम्।
+       </Marquee>
+       <Marquee class="san"> 
+          त्वदीयाय कार्याय बध्दा कटीयम् शुभामाशिषं देहि तत्पूर्तये।।
+        </Marquee>
+
+
+        <div id="title"> Discover the best food & drinks in Your Area </div>
+        <h1> Collections </h1>
+Explore curated lists of top restaurants, cafes, pubs, and bars in Your Area, based on trends
+    <!-- Restaurant List -->
+    <div class="restaurant-list" id="restaurantList">
+
+    <P>
+        <div class="loading-container" data-loading-container>
+            <div class="loading-circle"></div>
+          </div>
+    <script src="zomato.js"></script>
+</body>
+</html>

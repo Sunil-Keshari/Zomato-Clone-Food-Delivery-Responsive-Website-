@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+
+<head>
+<title>Food Customizer</title>
+<link rel="stylesheet" href="zomato.css">   
+
+   
+</head>
+<body>
+<h1><center>Customize Your Meal </center></h1>
+<div class="contain">
+    <div class="men">
+        <h3>Ingredients</h3>
+        <div class="ingredient">
+            <span>Cheese</span>
+            <button onclick="addIngredient('Cheese', 1.5)">Add</button>
+        </div>
+        <div class="ingredient">
+            <span>Tomato</span>
+            <button onclick="addIngredient('Tomato', 1.0)">Add</button>
+        </div>
+        <div class="ingredient">
+            <span>Chicken</span>
+            <button onclick="addIngredient('Chicken', 2.5)">Add</button>
+        </div>
+    </div>
+    <div class="preview">
+        <h3>Your Selection</h3>
+        <ul id="selected-items"></ul>
+        <p class="price">Total Price: $<span id="total-price">0.00</span></p>
+    </div>
+</div>
+<script>
+    let totalPrice = 0;
+    function addIngredient(name, price) {
+        const list = document.getElementById("selected-items");
+        const item = document.createElement("li");
+        item.textContent = name + " - $" + price.toFixed(2);
+        list.appendChild(item);
+        
+        totalPrice += price;
+        document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+    }
+</script>
+</body>
+</html>

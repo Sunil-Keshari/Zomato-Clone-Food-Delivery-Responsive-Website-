@@ -1,0 +1,445 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04430c;
+    background:Radial-gradient(to right,#c79904,#014b06);
+}
+
+h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0a7815;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #065206;
+    color: rgb(210, 115, 7);
+}
+
+.header .logo h1 {
+    font-size: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: none;
+    color: #080808;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #fefefd;
+    border: none;
+    color: rgb(207, 145, 12);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchInput{
+    color:rgb(18, 17, 17);
+    border: #100f0f;
+    font-size: 20px;
+    background: #ba6407;
+}
+.nav-links a {
+    margin-left: 20px;
+    color: rgb(220, 80, 24);
+    font-size: 18px;
+}
+
+/* Restaurant List Styling */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.restaurant-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.restaurant-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.restaurant-card p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a {
+    margin: 0 10px;
+}
+
+.san{
+    font-size: 35px;
+    color: #b3700b;
+    margin:10px;
+    text-shadow: rgb(2, 60, 2);
+}
+
+#title{
+    font-size: 50px;
+    padding: 10px;
+    margin:10px;
+    text-align: center;
+    color: rgb(1, 82, 8);
+    text-shadow: yellow;
+}
+
+
+/* Login */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    background-color: #8ec625;
+    background:linear-gradient(to right,#adbe52,#17479a);
+}
+.container{
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+.for{
+    margin:2 2rem;
+    padding: auto;
+    background: fixed;
+background-color: #305709;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #c0ab08;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+.input-group{
+    padding:1% 0;
+    position:relative;
+
+}
+.input-group i{
+    position:absolute;
+    color:black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#757575;
+    position:relative;
+    left:1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(327,90%,28%);
+    font-size:15px;
+}
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.recover a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(125,125,235);
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+.btn:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(125,125,235);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(125,125,235);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration:underline;
+    color:blue;
+}
+
+.about{
+    color: #3f1102;
+    font-size: large;
+    columns: auto;
+    font-weight: 200;
+    background:Radial-gradient(to right,#c79904,#014b06);
+}
+
+
+.sk{
+    font-size: 39px;
+    color: #141413;
+    margin:20px;
+    text-shadow: rgb(2, 60, 2);
+    text-align: center;
+    display: block;
+  margin-right: auto;
+}
+.sank{
+    color: #591902;
+    padding: 10px;
+    margin: 10px;
+}
+.about{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.zam{
+    text-align: left;
+    padding: 10px;
+    color: blanchedalmond;
+}
+   
+#aa{
+    column-gap: 40px;
+    columns: 5;
+    text-align: center;
+    text-shadow: #ba6407;
+    justify-content: center;
+    vertical-align: middle;
+    column-count: auto;
+}
+
+.skk{
+    padding:2px;
+    margin:15px;
+    color:black;
+}
+
+.sp{
+    justify-content: center; 
+    align-items: center;     
+    height:50vh; 
+    width:90vh;
+    margin:0%;
+    padding:2%;
+    transform: translate(20%, 10%);
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+
+
+
+/*Cart CSS Added Here...  */
+
+
+
+.contain {
+    display: flex;
+    justify-content: space-around;
+}
+.men, .preview {
+    width: 45%;
+    border: 1px solid #d55607;
+    padding: 20px;
+    border-radius: 10px;
+}
+.ingredient {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* For speaker */
+#search {
+    color:rgb(12, 12, 1);
+    border: #c51c1c;
+    font-size: 20px;
+    border-radius: 7px;
+    background: #ba6407;
+      }
+      textarea {
+          color:rgb(14, 14, 13);
+          border: #0f0e0e;
+          font-size: 20px;
+          background: #ba6407;
+      }
+
+
+
+
+    /* Responsive web design */
+
+@media (width < 768px){
+    body{
+        background-image: linear-gradient(to right, #b3700b, #17479a);
+        background-size: cover;
+   
+    }
+   .header{
+    color: #3f1102;
+}
+.search-bar{
+    margin: 2px;
+    color:#9f2e08;
+}
+.ww{
+    visibility: hidden;
+    flex-direction: column;
+}
+
+.nav-links{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.san{
+    font: 1em sans-serif;
+    color: #591902;
+}
+
+#title{
+    font: 1em sans-serif;
+    color: #591902; 
+}
+.restaurant-list{
+    font: 1em sans-serif;
+    color: #591902; 
+}
+
+.nav-links a{
+    color:#3f1102;
+    flex-direction: column;
+    column-count: 4;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; 
+    font-size: smaller;
+}
+.pp{
+    flex-direction: column;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */  
+    font-size: small;
+}
+.logo{
+    font: 1em sans-serif;
+    color: #591902; 
+}
+}
